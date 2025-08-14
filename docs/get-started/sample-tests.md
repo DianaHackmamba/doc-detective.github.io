@@ -18,10 +18,16 @@ npm i
 npx doc-detective
 ```
 
-By default, Doc Detective scans the current directory for valid tests, but you can specify your test file with the `--input` argument. For example, to run tests in a file named `doc-content-inline-tests.md`, run the following command:
+By default, Doc Detective scans the current directory for valid tests, but you can specify one or more test files with the `--input` argument. For example, to run tests in a file named `doc-content-inline-tests.md`, run the following command:
 
 ```bash
 npx doc-detective --input doc-content-inline-tests.md
+```
+
+If you have test files in multiple directories or want to specify multiple files, then enter them separated with commas:
+
+```bash
+npx doc-detective --input doc-content-inline-tests.md, /apis/api-tests.md
 ```
 
 To customize your test, file type, and directory options, create a `.doc-detective.json` [config](/docs/references/schemas/config) file. If a `.doc-detective.json` file exists in the directory when you run the comment, Doc Detective loads the config. Otherwise, you can specify a config path with the `--config` argument.
