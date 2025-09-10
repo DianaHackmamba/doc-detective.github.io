@@ -15,7 +15,7 @@ This action takes a simple boolean value:
 
 - `stopRecord: true`: Stops the current recording.
 
->Note: You must include a `stopRecord: true` step to finalize and save any recording started with the `record` action.
+> Note: You must include a `stopRecord: true` step to finalize and save any recording started with the `record` action.
 >
 > For comprehensive options, see the [`stopRecord`](/docs/references/schemas/stoprecord) reference.
 
